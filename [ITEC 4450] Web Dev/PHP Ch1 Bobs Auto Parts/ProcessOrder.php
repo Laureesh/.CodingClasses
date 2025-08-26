@@ -1,9 +1,10 @@
 <?php
     // Create short variable names
-    $tireqty = $_GET['tireqty'];
-    $oilqty = $_GET['oilqty'];
-    $sparkqty = $_GET['sparkqty'];
-    $sourceIndex = $_GET['find'];
+    $tireqty = $_POST['tireqty'];
+    $oilqty = $_POST['oilqty'];
+    $sparkqty = $_POST['sparkqty'];
+    $sourceIndex = $_POST['find'];
+    $sourceArray = ['Regular customer', 'TV advertising', 'Phone directory', 'Word of mouth', 'Social media', 'Search engine'];
 ?>
 
 <!DOCTYPE html>
@@ -40,16 +41,27 @@
             echo "Number of oil bottles: $oilqty<br>";
             echo "Number of spark plugs: $sparkqty<br>";
 
-            echo "Referral Source: $sourceIndex<br>";
-            switch ($sourceIndex) {
-                case 0: echo "Regular customer"; break;
-                case 1: echo "TV advertising"; break;
-                case 2: echo "Phone directory"; break;
-                case 3: echo "Word of mouth"; break;
-                case 4: echo "Social media"; break;
-                case 5: echo "Search engine"; break;
-            }
+            echo "Referral Source: ".$sourceArray[$sourceIndex];
             echo "<br>";
+
+            $totalqty = 0;
+            $totalqty = $tireqty + $oilqty + $sparkqty;
+            echo "Items ordered: $totalqty<br>";
+            
+            $totalAmount = 0.0;
+            define('TIRE_PRICE', 100);
+            define('OIL_PRICE', 10);
+            define('SPARK_PRICE', 4);
+            
+            $totalAmount = $tireqty * TIRE_PRICE +
+                            $oilqty * OIL_PRICE +
+                            $sparkqty * SPARK_PRICE;
+            
+            echo "Subtotal: $" . number_format($totalAmount, 2) . "<br>";
+
+            $taxRate = 0.10;  // local sales tax rate is 10%
+            $totalAmount *= (1.0 + $taxRate);
+            echo "Total including tax: $" . number_format($totalAmount, 2)."<br>";
         ?>
     </div>
 </body>
