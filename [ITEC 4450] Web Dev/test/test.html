@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barry Allen</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .section-title {
+      text-align: center;
+      font-size: 24px;
+      padding: 12px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<!-- About Section -->
+<div class="w3-row">
+  <!-- Text Box with one background -->
+  <div class="w3-half w3-pale-red w3-padding">
+    <h2 class="section-title w3-red">About</h2>
+    <p>
+      Barry Allen, also known as The Flash, is a fictional superhero from DC Comics.
+      Gifted with super-speed after a particle accelerator accident, he protects
+      Central City and the multiverse from various threats. His character represents
+      hope, resilience, and the power of science combined with humanity.
+    </p>
+  </div>
+
+  <!-- Image Box with a different background -->
+  <div class="w3-half w3-light-grey w3-center w3-padding">
+    <img src="barry.jpg" alt="Barry Allen" style="max-width:100%; height:auto;">
+  </div>
+</div>
+
+<!-- Background Section -->
+<div class="w3-row">
+  <!-- Text Box with one background -->
+  <div class="w3-half w3-light-blue w3-padding" style="height:300px;">
+    <p>
+      Barry Allen works as a forensic scientist for the Central City Police Department.
+      After gaining his powers, he dedicated his life to fighting crime and 
+      discovering the mysteries of the Speed Force. His journey balances heroism,
+      personal struggles, and relationships.
+    </p>
+  </div>
+
+  <!-- Image Box with another background -->
+  <div class="w3-half w3-light-grey w3-padding">
+    <img src="barryallen.jpg" alt="Barry Allen" style="max-width:100%; height:300px;">
+  </div>
+</div>
+
+<form action="formExample-ReceiveData.php" method="POST" class="w3-container">			 
+			 First Name <input type="text" name="fName"><br>
+			 Middle Name <input type="text" name="mName"><br>
+			 Last Name <input type="text" name="lName"><br>
+			 Classification
+			<select name="classification">
+			  <option value="freshman">Freshman</option>
+			  <option value="sophomore">Sophomore</option>
+			  <option value="junior">Junior</option>
+			  <option value="senior">Senior</option>
+			  <option value="grad">Graduate Student</option>			  
+			</select><br>					
+			 <input type="submit">
+
+		</form>
+
+</body>
+</html>

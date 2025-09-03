@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barry Allen (The Flash) — Movie Character Portfolio</title>
+
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-red.css" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+    <style>
+        body {
+            font-family: "Montserrat", Arial, sans-serif;
+        }
+
+        .hero {
+            background: url("images/flash-hero.jpg") center/cover no-repeat;
+            min-height: 38vh;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, .45);
+            min-height: 38vh;
+        }
+
+        .section-img {
+            max-width: 520px;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .w3-dropdown-hover .w3-button {
+            white-space: normal;
+        }
+
+        .field-required:after {
+            content: " *";
+            color: #c00;
+        }
+
+        footer a {
+            word-break: break-word;
+        }
+    </style>
+</head>
+<!--
+1. Required sections are:
+About, Background, Contact Us, Authors, footer, and 2 other custom sections.
+
+o The Authors section lists all the students’ name who contributed to the project.
+
+o The custom sections may contain information about other characters in the same
+movie, plot, actor/actress’ information, and/or any other information that the authors
+deem useful.
+
+o The footer section displays hyperlinks to all the sources.
+
+-->
+
+<body class="w3-theme-l4">
+    <!-- A header with the character’s name -->
+    <div class="w3-container w3-theme w3-card" style="padding: 10px;">
+        <div class="w3-center w3-xxlarge">Barry Allen</div>
+    </div>
+    <!-- 
+        A menu with at least 6 menu items.
+        One of those menu items should have a drop-down submenu.
+        All menu items should have links to specific sections of the page.
+        Every time the visitor clicks on a menu item, he/she should be taken to the appropriate section.
+        -->
+    <div class="w3-bar w3-theme-d4 w3-card">
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-theme">Home</a>
+        <a href="#background" class="w3-bar-item w3-button w3-hide-small">Background</a>
+        <a href="#powers" class="w3-bar-item w3-button w3-hide-small">Powers</a>
+
+        <!-- Dropdown -->
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button href="#teamflash" class="w3-button">Team Flash ▾</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-theme-d2">
+                <a href="#frost" class="w3-bar-item w3-button">Caitlin Snow (Killer Frost)</a>
+                <a href="#vibe" class="w3-bar-item w3-button">Cisco Ramon (Vibe)</a>
+                <a href="#kid" class="w3-bar-item w3-button">Wally West (Kid Flash)</a>
+            </div>
+        </div>
+
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact Us</a>
+        <a href="#authors" class="w3-bar-item w3-button w3-hide-small">Authors</a>
+    </div>
+
+    <!-- About Section 
+     The About section contains a general description of the character and an image.
+    -->
+    <div class="w3-container w3-theme-d3 w3-card">
+        <h2 class="w3-text-white w3-center w3-margin-0">About</h2>
+    </div>
+
+    <div class="w3-row">
+        <!-- Text -->
+        <div class="w3-col l6 m5 s12">
+            <div class="w3-padding" style="height: 400px; background:#ecb1b7;">
+                <p>
+                    Barry Allen is a beloved character from DC Comics who embodies both the ordinary struggles of a
+                    human being and the extraordinary responsibilities of a superhero. Known to the world as The Flash,
+                    Barry is often seen as the heart of the Justice League due to his optimism, loyalty, and relentless
+                    drive to help others. He is not only a protector of Central City but also a symbol of resilience,
+                    constantly balancing the weight of his personal losses with his commitment to saving lives. His
+                    story represents the triumph of hope and perseverance in the face of tragedy, making him one of the
+                    most relatable and inspiring heroes in comic book history.
+                </p>
+            </div>
+        </div>
+
+        <!-- Image -->
+        <div class="w3-col l4 m5 s12">
+            <!-- Replace src with your image file (same folder) -->
+            <img src="barryallen.jpg" alt="Barry Allen" style="height: 400px; padding:8px; padding-left:16px;">
+        </div>
+    </div>
+
+    <!-- Background Section
+     The Background section contains a historical background of the character along with an
+image.
+    -->
+    <div id="background" class="w3-container w3-theme-d3 w3-card">
+        <h2 class="w3-text-white w3-center w3-margin-0">Background</h2>
+    </div>
+
+    <div class="w3-row">
+        <!-- Image -->
+        <div class="w3-col l6 m5 s12">
+            <!-- Replace src with your image file (same folder) -->
+            <img src="barry_f.jpg" alt="Barry Allen And Iris West"
+                style="height: 400px; padding:8px; padding-left:16px;">
+        </div>
+
+        <!-- Text -->
+        <div class="w3-col l6 m5 s12">
+            <div class="w3-padding" style="height: 400px; background:#ecb1b7;">
+                <p>
+                    Barry Allen was introduced in Showcase #4 (1956), marking the beginning of the Silver Age of comics.
+                    Born and raised in Central City, Barry’s childhood was marked by tragedy when his mother, Nora
+                    Allen, was murdered under mysterious circumstances and his father was wrongfully imprisoned for the
+                    crime. This event shaped Barry’s sense of justice and inspired him to pursue a career as a forensic
+                    scientist with the Central City Police Department. His life changed forever when a freak accident
+                    involving a lightning strike and a mixture of lab chemicals granted him access to super-speed. From
+                    that moment on, Barry dedicated himself to becoming The Flash, not only to protect his city but also
+                    to seek the truth about his mother’s death and to prevent others from enduring the kind of pain he
+                    experienced as a child.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Powers Section -->
+    <div id="powers" class="w3-container w3-theme-d3 w3-card">
+        <h2 class="w3-text-white w3-center w3-margin-0">Powers</h2>
+    </div>
+
+    <div class="w3-row">
+        <!-- Text -->
+        <div class="w3-col l6 m5 s12">
+            <div class="w3-padding" style="height: 400px; background:#ecb1b7;">
+                <p>
+                    Barry Allen’s powers come from his unique connection to the mysterious energy known as the Speed
+                    Force. His primary ability is super-speed, allowing him to move, think, and react at unimaginable
+                    velocities. Beyond running fast, the Speed Force grants Barry a wide range of powers: he can phase
+                    through solid objects by vibrating his molecules, heal rapidly from injuries, travel through time,
+                    and even create multiple afterimages or “speed mirages.” His reflexes and perception are so enhanced
+                    that the world around him can appear frozen when he moves at full speed. Barry’s control over the
+                    Speed Force makes him one of the most powerful metahumans in the DC Universe, capable of battling
+                    cosmic threats and altering the very fabric of time itself.
+                </p>
+            </div>
+        </div>
+
+        <!-- Image -->
+        <div class="w3-col l4 m5 s12">
+            <!-- Replace src with your image file (same folder) -->
+            <img src="flash.jpg" alt="Barry Allen" style="height: 400px; padding:8px; padding-left:16px;">
+        </div>
+    </div>
+
+    <!-- Connections Section -->
+    <div id="teamflash" class="w3-container w3-theme-d3 w3-card">
+        <h2 class="w3-text-white w3-center w3-margin-0">Team Flash</h2>
+    </div>
+
+    <!-- Connection 1 -->
+    <div id="frost" class="w3-row">
+        <!-- Image -->
+        <div class="w3-col l6 m5 s12">
+            <!-- Replace src with your image file (same folder) -->
+            <img src="frost.jpg" alt="Barry Allen And Iris West" style="height: 500px; padding:8px; padding-left:16px;">
+        </div>
+
+        <!-- Text -->
+        <div class="w3-col l6 m5 s12 w3-card">
+            <div class="w3-padding" style="height: 500px; background:#ecb1b7;">
+                <h1 class="w3-center">Caitlin Snow (Killer Frost)</h1>
+                <p>
+                    Caitlin Snow is both the brilliant doctor and the icy powerhouse of Team Flash, making her one of
+                    the most versatile members of the team. Starting out as a bioengineer at S.T.A.R. Labs, she provided
+                    the medical knowledge, scientific expertise, and steady presence that Barry and his friends depended
+                    on from the very beginning. However, after the particle accelerator accident, Caitlin discovered her
+                    metahuman alter ego, Killer Frost, whose cryokinetic abilities could freeze enemies in an instant,
+                    create ice constructs, and even heal through her connection to cold energy. At first, Caitlin
+                    struggled with Frost’s violent nature, fighting an internal battle between her humanity and this
+                    dangerous new side of herself. Over time, she learned to embrace both halves of her identity,
+                    ultimately using her powers to defend Central City alongside Team Flash. This balance between her
+                    intelligence as a scientist and her immense strength as Killer Frost cemented her as both the mind
+                    and muscle of the team.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Connection 2 -->
+    <div id="vibe" class="w3-row">
+        <!-- Text -->
+        <div class="w3-col l6 m5 s12 w3-card">
+            <div class="w3-padding" style="height: 500px; background:#ecb1b7;">
+                <h1 class="w3-center">Cisco Ramon (Vibe)</h1>
+                <p>
+                    Cisco Ramon, the heart and humor of Team Flash, is a mechanical engineering prodigy whose creativity
+                    and courage made him indispensable long before he gained powers. As the designer of Barry’s Flash
+                    suits and countless gadgets, Cisco became the team’s tech genius, but when the particle accelerator
+                    explosion awakened his metagene, he evolved into the hero known as Vibe. With the ability to sense
+                    and manipulate vibrational energy, Cisco could unleash devastating shockwaves, open breaches between
+                    dimensions, and see across timelines, giving Team Flash both offensive power and critical insight
+                    against multiversal threats. Initially hesitant to accept his role as a hero, Cisco grew into one of
+                    the team’s most important protectors, standing shoulder to shoulder with Barry against enemies far
+                    beyond Central City. His humor kept the team grounded, but his powers made him one of the most
+                    dangerous and valuable metahumans in the Arrowverse.
+                </p>
+            </div>
+        </div>
+
+        <!-- Image -->
+        <div class="w3-col l4 m5 s12">
+            <!-- Replace src with your image file (same folder) -->
+            <img src="vibe.jpg" alt="Barry Allen" style="height: 500px; padding:8px; padding-left:16px;">
+        </div>
+    </div>
+
+    <!-- Connection 3 -->
+    <div id="kid" class="w3-row">
+        <!-- Image -->
+        <div class="w3-col l6 m5 s12">
+            <!-- Replace src with your image file (same folder) -->
+            <img src="kid.jpg" alt="Barry Allen And Iris West" style="height: 500px; padding:8px; padding-left:16px;">
+        </div>
+
+        <!-- Text -->
+        <div class="w3-col l6 m5 s12 w3-card">
+            <div class="w3-padding" style="height: 500px; background:#ecb1b7;">
+                <h1 class="w3-center">Wally West (Kid Flash)</h1>
+                <p>
+                    Wally West, also known as Kid Flash, represents the future of speedsters and one of the strongest
+                    allies Barry Allen has ever had. Introduced as the rebellious son of Joe West and half-brother of
+                    Iris, Wally eventually found his calling when he connected to the Speed Force and embraced his
+                    destiny as a hero. Under Barry’s mentorship, Wally quickly grew from a headstrong teenager into a
+                    disciplined speedster, developing powers that mirrored and, at times, rivaled Barry’s own. With
+                    super-speed that allowed him to run across water, scale buildings, heal rapidly, and react in
+                    fractions of a second, Wally became a force of nature in battle. His heightened sensitivity to the
+                    Speed Force even gave him unique abilities, setting him apart from other speedsters and hinting at
+                    limitless potential. Wally’s growth into Kid Flash not only strengthened Team Flash but also proved
+                    the importance of family, mentorship, and hope in shaping the next generation of heroes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section
+     The Contact Us form displays a form with proper input boxes for first name, last name,
+address, email, classification, date of birth, and gender. It should also contain a “Send”
+button.
+    -->
+    <div id="contact" class="w3-container w3-theme-d3 w3-card">
+        <h2 class="w3-text-white w3-center w3-margin-0">Contact Us</h2>
+    </div>
+
+    <div class="w3-container">
+        <form class="w3-container">
+            <strong>First Name</strong>
+            <input type="text" name="fName" class="w3-input w3-border">
+
+            <strong>Last Name</strong>
+            <input type="text" name="lName" class="w3-input w3-border">
+
+            <strong>Address</strong>
+            <input type="text" name="address" class="w3-input w3-border">
+
+            <strong>Email</strong>
+            <input type="email" name="email" class="w3-input w3-border">
+
+            <strong>Classification</strong>
+            <select name="classification" class="w3-input w3-border">
+                <option>Choose your classification</option>
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select>
+
+            <strong>Date of Birth</strong>
+            <input type="date" name="dob" class="w3-input w3-border">
+
+            <strong>Gender</strong>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">Male</input>
+            <input type="radio" id="female" name="gender" value="female">Female</input>
+            <input type="radio" id="other" name="gender" value="other">Other</input>
+            <input type="radio" id="unknown" name="gender" value="unknown" disabled>Don't know (Disabled)</input>
+            <br>
+
+            <button type="submit" class="w3-button w3-theme">Send</button>
+            <br>
+            <br>
+        </form>
+    </div>
+
+    <!-- Authors Section -->
+    <div id="authors" class="w3-container w3-theme-d3 w3-card">
+        <h2 class="w3-text-white w3-center w3-margin-0">Authors</h2>
+    </div>
+
+    <p style="padding-left: 20px;">Copyright &copy; 2025 by Laureesh Volmar</p>
+
+    <div class="w3-card">
+            <div class="w3-padding" style="height: auto; background:#ecb1b7;">
+        <h6>Sources:</h6>
+        <ul>
+            <li><a href="https://arrow.fandom.com/wiki/Barry_Allen_(Earth-1)">Barry Allen - Earth-1</a></li>
+            <li><a href="https://whatculture.com/tv/10-great-dc-comics-characters-the-arrowverse-has-totally-wasted?page=10">Wally West - The Flash</a></li>
+            <li><a href="https://www.yahoo.com/entertainment/barry-allen-gets-fresh-look-181636172.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAJApGul9S_pJDy3oW5loGSKGaG3rSpKRgLhRavMDF8DpQbz1eBqIrBo6Hr6ndcl2Rfta6X855bf1-kmshfyf8M7EqIoruxnMKwI-wmhhAmLbqw_0DbwhfFLk_CXAy3YEBBDfvpKvASIJAsG0GFUO1yDsxLaXKzVIJFRkQfmXzgN2">Barry Allen - The Flash</a></li>
+            <li><a href="https://nerdlush.com/2013/12/06/arrow-season-2x08-the-scientist-recap">Barry Allen - Forensic</a></li>
+            <li><a href="https://www.flickr.com/photos/fanabouttown/26137798785">Barry Allen Photo</a></li>
+            <li><a href="https://aminoapps.com/c/arrowverseam299/page/blog/killer-frost/nkb5_ZDcLunvqJ72P6rrw2EVGPgKDDaB8N">Caitlin Snow - Killer Frost</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
