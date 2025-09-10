@@ -1,0 +1,102 @@
+ID = 1
+name = Forest Edge
+Description
+You are at the edge of a vast, mystical forest.
+The trees tower above you, their leaves forming an impenetrable canopy.
+The sound of distant whispers reaches your ears, carried by a soft breeze.
+A path leads westward into the forest.
+visited = false
+exits = WEST 2
+
+ID = 2
+name = Whispering Glade
+Description
+You have entered a glade where the trees seem to hum with an eerie melody.
+The air is thick, and you feel as though unseen eyes are watching your every move.
+To the east, you can return to the Forest Edge.
+To the west, the glade opens up to an ancient altar.
+visited = false
+exits = EAST 1, WEST 3
+
+ID = 3
+name = Altar of Secrets
+Description
+Before you stands an ancient altar, covered in vines and moss.
+Faint carvings of strange symbols glow faintly.
+To the east, you can retreat to the Whispering Glade.
+To the north, you hear the sound of chanting and water trickling, leading to a shaded hollow.
+visited = false
+exits = EAST 2, NORTH 4
+
+ID = 4
+name = Shaded Hollow
+Description
+The hollow echoes with the sound of dripping water and faint footsteps that don’t seem to be your own.
+Shadows dance on the ground as your torch flickers.
+A warning sign reads, "Beware of what lies ahead."
+To the south lies the Altar of Secrets.
+To the north, the sound of water grows louder, leading to a sparkling grove.
+visited = false
+exits = SOUTH 3, NORTH 5
+
+ID = 5
+name = Sparkling Grove
+Description
+You have entered a grove lined with shimmering crystals.
+The trees glow faintly, illuminating the area with an otherworldly light.
+A narrow path south leads back to the Shaded Hollow.
+To the east, the sound of rushing water guides you toward a reflecting pool.
+visited = false
+exits = SOUTH 4, EAST 6
+
+ID = 6
+name = Reflecting Pool
+Description
+You are standing at the edge of a still reflecting pool.
+The water is eerily calm, mirroring the faint light from above.
+In the distance, you see a small boat tied to a wooden post.
+To the west, the path returns to the Sparkling Grove.
+To the north, a faint light draws you to an ancient sanctuary.
+visited = false
+exits = WEST 5, NORTH 7
+
+ID = 7
+name = Sanctuary of Relics
+Description
+This sanctuary is filled with strange artifacts and ancient relics.
+The air feels heavy, as if time itself has stopped.
+A faint glow from the north draws your attention to an echoing chamber.
+To the south, the path returns to the Reflecting Pool.
+visited = false
+exits = SOUTH 6, NORTH 8
+
+ID = 8
+name = Chamber of Echoes
+Description
+You step into a chamber where every sound you make is amplified a hundredfold.
+The walls are lined with ancient carvings, depicting scenes of battles and victories.
+A single door to the north leads to a towering stronghold.
+To the east, another path branches into the unknown.
+visited = false
+exits = SOUTH 7, EAST 9
+
+ID = 9
+name = Sentinel's Stronghold
+Description
+You find yourself in a towering stronghold guarded by a statue of a mighty warrior.
+The statue seems to watch your every move.
+Beyond it lies an ornate door glowing faintly with golden light.
+To the west, you can return to the Chamber of Echoes.
+To the south, a golden light beckons you to the Heart of the Forest.
+visited = false
+exits = WEST 8, SOUTH 10
+
+ID = 10
+name = The Glade of Light
+Description
+Congratulations!!! You have reached the Glade of Light.
+The air is filled with an overwhelming sense of peace and accomplishment.
+Golden light cascades down from above, illuminating the path forward.
+To the north, you can return to the Sentinel's Stronghold.
+visited = false
+exits = NORTH 9
