@@ -17,7 +17,7 @@
     </header>
     <?php include "menu.php" ?>
     <div>   
-      <h2>By Student's Name (Enter your first and last name)</h2>
+      <h2>By Laureesh Volmar</h2>
     </div>
     <br><br>
     <footer class="w3-theme-l2">

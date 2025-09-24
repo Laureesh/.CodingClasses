@@ -29,6 +29,8 @@
         <select class="w3-select" name="product">	
             <?php
 				// Enter your code here to display the drop-down list of products
+                foreach ($productsArray as $key => $value) {
+                echo "<option value='$key'> $value[0]</option><br>"; }
             ?>  
         </select>
 
@@ -47,6 +49,13 @@
             </tr>
             <?php                            
                 // Enter your code here to display the table rows with item code, description and unit price
+                foreach ($productsArray as $key => $value) {
+                    echo "<tr>";
+                    echo "<td>$key</td>";
+                    echo "<td>{$value[0]}</td>";
+                    echo "<td>$" . number_format($value[1], 2) . "</td>";
+                    echo "</tr>";
+                }
             ?>               
         </table>        
     </div>
