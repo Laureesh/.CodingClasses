@@ -12,7 +12,7 @@ FROM books
 LEFT JOIN order_items ON books.ISBN = order_items.ISBN
 WHERE order_items.ISBN IS NULL;
 
-===================================================================================================================
+=============================================================================================================
 3. All orders and their items
 
 SELECT order_items.OrderID, order_items.ISBN, order_items.Quantity, orders.Date, books.Title, books.Author, books.Price
