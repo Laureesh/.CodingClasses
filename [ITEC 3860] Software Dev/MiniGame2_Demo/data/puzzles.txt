@@ -1,0 +1,3 @@
+P1|What is Naruto's signature jutsu?|Rasengan|You mastered the Rasengan!|That’s not Naruto’s technique.|5|False
+P2|Who was Naruto’s first sensei at the Academy?|Iruka|You remembered your teacher correctly!|That’s not the right sensei, think back to the classroom days.|9|False
+P3|What is the name of the Nine-Tailed Beast sealed inside Naruto?|Kurama|You tamed the power of Kurama!|That’s not the beast sealed within Naruto.|7|False
