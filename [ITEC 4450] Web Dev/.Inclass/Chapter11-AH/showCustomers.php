@@ -30,7 +30,7 @@
                 include "connectDatabase.php";
 
                 $sql = "SELECT * ";
-                $sql .= "FROM customers "; // he has customer not s
+                $sql .= "FROM customer ";
                 $sql .= "ORDER BY lastName, firstName ";
 
                 $result = $conn->query($sql);
@@ -38,7 +38,7 @@
                 if ($result->num_rows > 0) {
                     echo "<table class ='w3-table w3-striped'>";
                     echo "  <tr class='w3-teal'>";
-                    echo "      <th>Customer ID</th>";
+                    echo "      <th>ID</th>";
                     echo "      <th>First Name</th>";
                     echo "      <th>Last Name</th>";
                     echo "      <th>Address</th>";

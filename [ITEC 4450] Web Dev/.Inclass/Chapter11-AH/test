@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Customer</title>
+    <title>New Order</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,14 +18,14 @@
             </div>
 
             <h1>Jimmy Take Out</h1>
-            <h2>New Customer</h2>
+            <h2>New Order</h2>
         </header>
 
         <?php
             include "mainMenu.php";
         ?>
 
-        <form action="newCustomer.php" method="POST" class="w3-container w3-sand">
+        <form action="newOrder.php" method="POST" class="w3-container w3-sand">
             <fieldset>
                 <label>First Name</label>
                 <input type="text" name="fName" class="w3-input w3-border">

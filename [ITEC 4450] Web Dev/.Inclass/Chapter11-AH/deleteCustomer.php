@@ -14,7 +14,7 @@
     <div class="w3-container w3-blue-grey">
         <header class="w3-display-container w3-center">
             <div class="w3-display-right w3-container">
-                <img src="manRiceEat.png" alt="" style="width:20%;">
+                <img src="manRiceEat.png" style="width:20%;">
             </div>
 
             <h1>Jimmy Take Out</h1>
@@ -29,13 +29,14 @@
             <fieldset>
                 <label>Customer</label>
                 <select name="customer" class="w3-select">
+                    <option value="" disabled selected>Choose customer</option>
                     <?php
                         include "connectDatabase.php";
 
                         # Only display customers who do NOT have orders
                         # We don't allow to remove customers with orders
                         $sql = "SELECT c.customer_id, c.firstName, c.lastName ";
-                        $sql .= "FROM customers c LEFT JOIN orders o "; // customer not customers
+                        $sql .= "FROM customer c LEFT JOIN orders o ";
                         $sql .= "ON c.customer_id = o.customer_id ";
                         $sql .= "WHERE o.order_id IS NULL ";
 
@@ -64,23 +65,23 @@
                         echo "You have not selected a customer. Please go back and try again.";
                         exit;     
                     }
-                    
+
+                    $customer_id = $_POST['customer'];
+
                     include "connectDatabase.php";
                     
-                    $customer_id = mysqli_real_escape_string($conn, $_POST['customer']);
-                    
                     $sql = "DELETE ";
-                    $sql .= "FROM customers "; // might be error later
+                    $sql .= "FROM customer ";
                     $sql .= "WHERE customer_id = '$customer_id' ";
 
                     if ($conn->query($sql) === TRUE) {
-                        echo "Customer record for customer_id=$customer_id successfully deleted.";
+                        echo "Customer record for customer_id=$customer_id successfully deleted!<br>";
                     } else {
                         echo "Error: $sql<br>".$conn->error;
                     }
                     $conn->close();
 
-                    #refresh current page to update the dropdown list
+                    # refresh current page to update the dropdown list
                     header("Refresh:0");
                 }
             ?>
