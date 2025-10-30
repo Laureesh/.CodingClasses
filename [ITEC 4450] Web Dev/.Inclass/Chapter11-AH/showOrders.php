@@ -69,7 +69,7 @@
 
                     echo "</table>";
                 } else {
-                    echo "<p>No orders found.</p>";
+                    echo "0 results<br>";
                 }
 
                 $conn->close();

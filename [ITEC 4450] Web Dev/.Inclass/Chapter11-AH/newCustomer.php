@@ -29,6 +29,8 @@
             <fieldset>
                 <label>First Name</label>
                 <input type="text" name="fName" class="w3-input w3-border">
+                <!-- <... class="w3-input w3-border" required> -->
+                 <!-- could add required attribute to input fields to enforce client-side validation -->
 
                 <label>Last Name</label>
                 <input type="text" name="lName" class="w3-input w3-border">
@@ -50,6 +52,7 @@
         <div class="w3-container w3-sand">
             <?php
                 if (isset($_POST['submit'])) {
+                    // empty(trim($_POST['fName'])) 
                     if (!isset($_POST['fName']) || !isset($_POST['lName']) || !isset($_POST['address']) || !isset($_POST['city']) || !isset($_POST['state']) || !isset($_POST['zip'])) {
                         echo "You have not entered all the required information. Please go back and try again.";
                         exit;     

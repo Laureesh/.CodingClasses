@@ -125,7 +125,7 @@
                         // -- for each dish                              --
                         // ------------------------------------------------
                         // convert string of dishes' id to an array
-                        $dishIdArray = explode(",", $dishSel);
+                        $dishIdArray = explode(";", $dishSel);
                         for($i = 0; $i < count($dishIdArray); $i++) {
                             $curDishId = $dishIdArray[$i];
 
@@ -212,11 +212,11 @@
 
         function calcTotalPrice() {
             var listSel = document.getElementById("listDishSel");
-            var priceField = document.getElementById("price");
+            var priceOut = document.getElementById("price");
             var totalPrice = 0;
 
             for (i = 0; i < listSel.options.length; i++) {
-                curPrice = listSel.options[i].innerHTML.split(",")[1];
+                curPrice = listSel.options[i].innerHTML.split(',')[1];
                 curPrice = parseFloat(curPrice);
 
                 totalPrice += curPrice;
