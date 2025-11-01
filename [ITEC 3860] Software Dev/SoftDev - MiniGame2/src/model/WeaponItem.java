@@ -11,9 +11,7 @@ import view.ConsoleColors;
  * Written: October 16, 2025
  *
  * Description:
- * Represents a weapon-type item that can be used by the player.
- * Extends the Item class by adding a damage attribute and a custom use action.
- * Displays a message showing the damage dealt when used.
+ * This class represents a weapon type item that can be used by the player.
  */
 
 public class WeaponItem extends Item {
@@ -25,12 +23,12 @@ public class WeaponItem extends Item {
         this.damage = damage;
     }
 
+    // Getters/Setters
+    public int getDamage() { return damage; }
+    public void setDamage(int damage) { this.damage = damage; }
+
     @Override
     public String use() {
-        return ConsoleColors.RED + "You swing the " + getName() + ", dealing " + damage + " damage!" + ConsoleColors.RESET;
-    }
-
-    public int getDamage() {
-        return damage;
+        return ConsoleColors.GREEN + "You swing the " + getName() + ", dealing " + damage + " damage!" + ConsoleColors.RESET;
     }
 }

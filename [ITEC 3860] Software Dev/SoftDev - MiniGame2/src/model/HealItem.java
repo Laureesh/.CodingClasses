@@ -11,9 +11,7 @@ import view.ConsoleColors;
  * Written: October 16, 2025
  *
  * Description:
- * Represents a healing item that restores the player's health when used.
- * Extends the Item class by adding a heal amount attribute and a custom use message.
- * Displays a message showing the HP restored upon use.
+ * This class represents a healing item that restores the player's health when used.
  */
 
 public class HealItem extends Item {
@@ -24,12 +22,27 @@ public class HealItem extends Item {
         this.healAmount = healAmount;
     }
 
+    // Getters/Setters
+    public int getHealAmount() { return healAmount; }
+    public void setHealAmount(int healAmount) { this.healAmount = healAmount; }
+
+    public void heal(Player player) {
+        // Increase the player's health by the healing amount of this item
+        player.setHealth(player.getHealth() + getHealAmount());
+
+        // If the new health is higher than the maximum allowed, limit it to max health
+        if (player.getHealth() > player.getMaxHealth()) {
+            player.setHealth(player.getMaxHealth());
+        }
+
+        // Show the player's updated health in the console
+        System.out.println(ConsoleColors.CYAN
+                + "Current Health: " + player.getHealth() + "/" + player.getMaxHealth()
+                + ConsoleColors.RESET);
+    }
+
     @Override
     public String use() {
         return ConsoleColors.GREEN + "You used " + getName() + " and restored " + healAmount + " health points!" + ConsoleColors.RESET;
-    }
-
-    public int getHealAmount() {
-        return healAmount;
     }
 }

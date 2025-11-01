@@ -9,9 +9,8 @@ package model;
  * Written: October 16, 2025
  *
  * Description:
- * Defines an item object used within the game.
- * Stores its unique ID, name, description, and type.
- * Provides basic accessors, a formatted string output, and a placeholder use method.
+ * Represents a basic game item with an ID, name, description, and type.
+ * implentation inheritance
  */
 
 public class Item {

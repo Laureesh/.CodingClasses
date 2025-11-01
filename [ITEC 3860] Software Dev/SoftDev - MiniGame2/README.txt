@@ -1,3 +1,9 @@
+========== Future Updates ==========
+// Stop view from interacting with model
+//			View should host all the output messages
+// Move methods to correct Class
+// 
+
 ========== How to Start the Game ==========
 // 1. Ensure the following files are inside your project folder structure:
 //    Project/
@@ -19,13 +25,15 @@
 //    │   │   └── Puzzle.java
 //    │   └── view/
 //    │       └── ConsoleColors.java
+//    ├── Map with Items & Puzzles.jpg
+//    ├── UserManual.pdf
 //    └── README.txt
 //
 // 2. Compile and run the main class:
 //       controller.GameController
 
 ========== Rooms Text File Format ==========
-// Each line in rooms.txt is split into 7 parts, separated by "|" (vertical bar symbol):
+// Each line in rooms.txt is split into 7 parts, separated by vertical bar symbol:
 <roomID>|<roomName>|<roomDescription>|<roomConnections>|<isVisited>|<itemID>|<puzzleID>
 
 // <roomID>       Unique number assigned to each room.
@@ -38,10 +46,10 @@
 // <puzzleID>     ID of the puzzle linked to this room (use P0 for none).
 
 ========== Items Text File Format ==========
-// Each line in items.txt is split into 4 parts, separated by "|" (vertical bar symbol):
+// Each line in items.txt is split into 5 parts, separated by vertical bar symbol:
 <itemID>|<itemName>|<itemDescription>|<itemType>|<value>
 
-// <itemID>         Unique number assigned to each item (must start with "I").
+// <itemID>         Unique number assigned to each item (must start with I).
 // <itemName>       The name of the item (as displayed in-game).
 // <itemDescription> Description of what the item is or does.
 // <itemType>       The type/category of the item: Weapon, Heal, Key, or Misc.
@@ -51,10 +59,10 @@
 //                   - For Key or Misc: leave blank if not applicable.
 
 ========== Puzzles Text File Format ==========
-// Each line in puzzles.txt is split into 7 parts, separated by "|" (vertical bar symbol):
+// Each line in puzzles.txt is split into 7 parts, separated by vertical bar symbol:
 <puzzleID>|<puzzleQuestion>|<puzzleAnswer>|<puzzlePassMessage>|<puzzleFailMessage>|<puzzleAttempts>|<puzzleFlag>
 
-// <puzzleID>           Unique number assigned to each puzzle (must start with "P").
+// <puzzleID>           Unique number assigned to each puzzle (must start with P).
 // <puzzleQuestion>     The question or challenge presented to the player.
 // <puzzleAnswer>       The correct answer to solve the puzzle.
 // <puzzlePassMessage>  Message shown when the player solves the puzzle correctly.
@@ -69,7 +77,6 @@ Mini Game Part 1
 // AI suggested different ways to allow both short and long commands.
 // AI suggested a cleaner way to format output for readability.
 Mini Game Part 2
-//
-//
-//
-//
+// AI suggested a cleaner way to format output for readability.
+// Improved the formatting of README & User Manual to make them easier to follow.
+// Brainstormed how to theme the items and puzzles based on Naruto.

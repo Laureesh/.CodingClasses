@@ -1,6 +1,6 @@
-I1|Kunai|A sharp ninja throwing knife.|Weapon
-I2|Healing Herb|A rare leaf that restores 25 Health.|Heal|25
-I3|Bronze Key|A small key that opens the Uchiha Shrine.|Key
-I4|Map Scroll|An old map showing the hidden leaf layout.|Misc
-I5|Soldier Pill|A powerful chakra-supplementing pill used by shinobi that restores 50 Health.|Heal|50
-I6|Medical Ninja Bandage|A sterile bandage infused with healing chakra that restores 100 Health.|Heal|100
+I1|Kunai|A sharp ninja throwing knife.|Weapon|10
+I2|Herb|A rare leaf that restores 25 Health.|Heal|25
+I3|Bronze|A small key that opens the Uchiha Shrine.|Key
+I4|Scroll|An old map showing the hidden leaf layout.|Misc
+I5|Pill|A powerful chakra-supplementing pill used by shinobi that restores 50 Health.|Heal|50
+I6|Bandage|A sterile bandage infused with healing chakra that restores 100 Health.|Heal|100

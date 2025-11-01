@@ -11,8 +11,7 @@ import view.ConsoleColors;
  * Written: October 16, 2025
  *
  * Description:
- * Represents a key-type item used to unlock doors or trigger specific events.
- * Extends the Item class and overrides the use method to display an unlock action message.
+ * This class represents a key type item used to unlock doors.
  */
 
 public class KeyItem extends Item {
