@@ -78,5 +78,7 @@ public class Puzzle {
         if (!completed) {
             reset();
         }
+        
+        scanner.close();
     }
 }
