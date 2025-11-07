@@ -27,10 +27,11 @@
 
         <form action="newCustomer.php" method="POST" class="w3-container w3-sand">
             <fieldset>
+                <!-- class="w3-input w3-border" required> -->
+                <!-- could add required attribute to enforce client-side validation -->
+                 
                 <label>First Name</label>
                 <input type="text" name="fName" class="w3-input w3-border">
-                <!-- <... class="w3-input w3-border" required> -->
-                 <!-- could add required attribute to input fields to enforce client-side validation -->
 
                 <label>Last Name</label>
                 <input type="text" name="lName" class="w3-input w3-border">

@@ -30,7 +30,7 @@
                 include "connectDatabase.php";
 
                 // Query to show orders with customer and dish info
-                $sql = "SELECT 
+                /* $sql = "SELECT 
                             o.order_id AS ID,
                             c.firstName AS firstName,
                             c.lastName AS lastName,
@@ -41,7 +41,11 @@
                         JOIN customer c ON o.customer_id = c.customer_id
                         JOIN dishorder do ON o.order_id = do.order_id
                         JOIN dish d ON do.dish_id = d.dish_id
-                        ORDER BY o.date DESC";
+                        ORDER BY o.date DESC"; */
+                $sql = "SELECT o.order_id, c.customer_id, c.firstName, c.lastName, o.date, d.name, o.totalPrice ";
+                $sql .= "FROM customer c, dishorder dor, orders o, dish d ";
+                $sql .= "WHERE c.customer_id = o.customer_id AND o.order_id = dor.order_id AND dor.dish_id = d.dish_id ";
+                $sql .= "ORDER BY o.order_id ";
 
                 $result = $conn->query($sql);
 
@@ -58,20 +62,19 @@
 
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
-                        echo "  <td>".$row['ID']."</td>";
+                        echo "  <td>".$row['order_id']."</td>";
                         echo "  <td>".$row['firstName']."</td>";
                         echo "  <td>".$row['lastName']."</td>";
                         echo "  <td>".$row['date']."</td>";
-                        echo "  <td>".$row['dish']."</td>";
+                        echo "  <td>".$row['name']."</td>";
                         echo "  <td>".$row['totalPrice']."</td>";
                         echo "</tr>";
                     }
-
                     echo "</table>";
-                } else {
+                } 
+                else {
                     echo "0 results<br>";
                 }
-
                 $conn->close();
             ?>
         </div>

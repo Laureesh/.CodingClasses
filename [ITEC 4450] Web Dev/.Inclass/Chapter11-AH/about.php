@@ -26,8 +26,8 @@
         ?>
 
         <div class="w3-container w3-sand">
-            We make the best take out food in town!<br>
-            What are you waiting for? Order now!<br>
+            <p>We make the best take out food in town!</p>
+            <p>What are you waiting for? Order now!</p>
             <h4><b>By Laureesh Volmar</b></h4>
         </div>
     </div>

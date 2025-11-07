@@ -25,7 +25,7 @@
             include "mainMenu.php";
         ?>
 
-        <form action="deleteCustomer.php" method="POST" class="w3-container w3-sand">
+        <form class="w3-container w3-sand" action="deleteCustomer.php" method="POST">
             <fieldset>
                 <label>Customer</label>
                 <select name="customer" class="w3-select">
@@ -33,8 +33,7 @@
                     <?php
                         include "connectDatabase.php";
 
-                        # Only display customers who do NOT have orders
-                        # We don't allow to remove customers with orders
+                        # Select customers who do NOT have orders
                         $sql = "SELECT c.customer_id, c.firstName, c.lastName ";
                         $sql .= "FROM customer c LEFT JOIN orders o ";
                         $sql .= "ON c.customer_id = o.customer_id ";
@@ -62,7 +61,7 @@
             <?php
                 if (isset($_POST['submit'])) {
                     if (!isset($_POST['customer'])) {
-                        echo "You have not selected a customer. Please go back and try again.";
+                        echo "You have not entered all required details. Please go back and try again.";
                         exit;     
                     }
 

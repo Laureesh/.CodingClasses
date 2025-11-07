@@ -58,10 +58,8 @@
                         echo "  <td>".$row['zip']."</td>";
                         echo "</tr>";
                     }
-
                     echo "</table>";
                 }
-
                 else {
                     echo "0 results<br>";
                 }

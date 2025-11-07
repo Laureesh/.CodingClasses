@@ -33,7 +33,7 @@
                     <?php
                         include "connectDatabase.php";
 
-                        # select customers who do not have orders
+                        # retrieve all customers
                         $sql = "SELECT c.customer_id, c.firstName, c.lastName ";
                         $sql .= "FROM customer c ";
 
@@ -67,7 +67,7 @@
                         <?php
                             include "connectDatabase.php";
 
-                            # select customers who do not have orders
+                            # retrieve all dishes
                             $sql = "SELECT d.dish_id, d.name, d.price ";
                             $sql .= "FROM dish d ";
 
@@ -82,6 +82,7 @@
                                    echo "<option value='$dishId'>$dishId-$dishName, $dishPrice</option>";
                                 }
                             }
+                            $conn->close();
                         ?>
                     </select><br>
                     <input class="w3-button w3-teal w3-round-large" value="Add dish" onclick="addDish()"><br>
@@ -146,8 +147,8 @@
                     else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
                     }
+                    $conn->close();
                 }
-             $conn->close();
             ?>
         </div>
     </div>
@@ -206,7 +207,6 @@
                 result += listSel.options[i].value + ";";
             }
             dishSel.value = result;
-
             calcTotalPrice();
         }
 

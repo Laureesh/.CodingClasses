@@ -52,10 +52,8 @@
                         echo "  <td>".$row['price']."</td>";
                         echo "</tr>";
                     }
-
                     echo "</table>";
                 }
-
                 else {
                     echo "0 results<br>";
                 }
