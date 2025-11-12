@@ -1,0 +1,21 @@
+1. All customers with orders
+
+SELECT customers.CustomerID, customers.Name, orders.OrderID, orders.Amount, orders.Date
+FROM customers
+JOIN orders ON customers.CustomerID = orders.CustomerID;
+
+===================================================================================================================
+2. All books with no orders
+
+SELECT books.ISBN, books.Author, books.Title, books.Price, order_items.OrderID, order_items.ISBN, order_items.Quantity
+FROM books
+LEFT JOIN order_items ON books.ISBN = order_items.ISBN
+WHERE order_items.ISBN IS NULL;
+
+===================================================================================================================
+3. All orders and their items
+
+SELECT order_items.OrderID, order_items.ISBN, order_items.Quantity, orders.Date, books.Title, books.Author, books.Price
+FROM order_items
+JOIN orders ON order_items.OrderID = orders.OrderID
+JOIN books ON order_items.ISBN = books.ISBN;
