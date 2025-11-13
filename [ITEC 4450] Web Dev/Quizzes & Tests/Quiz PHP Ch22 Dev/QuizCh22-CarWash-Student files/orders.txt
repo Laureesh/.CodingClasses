@@ -1,0 +1,5 @@
+19/04/2023 05:42:15;Tire Shine;Basic + tire shine;2;20
+19/04/2023 05:46:37;Basic;Exterior machine wash;4;10
+19/04/2023 05:46:50;Hot Wax;Basic + interior hand wash;1;25
+19/04/2023 05:46:58;Ceramic Sea Gloss;Hot Wax + Glossy finish;4;40
+19/04/2023 05:49:23;Hot Wax;Basic + interior hand wash;2;25
