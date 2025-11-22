@@ -1,0 +1,34 @@
+Figma - mock up
+v0 by vercel - builds frontend
+node.js - backend
+tailwindcss - styling
+claude AI - 
+chatgpt - AI assistants
+vercel - deployment
+Use GitHub
+Git
+vite
+firebase
+
+codefolioggc.vercel.app - portfolio
+
+Best Tech Stack
+- https://s3.amazonaws.com/angularminds.com/site_data/static/images/web-development-stack/web-development-stack.png
+- https://miro.medium.com/1*Cy4AkzbwDrbqlyU5Sc3BTw.jpeg
+- https://d2ms8rpfqc4h24.cloudfront.net/Definition_Of_Web_Development_Stack_a9de145586.jpg
+- 
+- 
+- 
+- 
+- Add admin commands to game
+like add health, add damage, teleport to any room, spawn items, and spawn weapons
+ask chatgpt for features
+
+
+
+Some ideas
+-Maybe an app that can choose what you like to watch, movie database website
+- Password manager from my notes icloud
+
+
+
